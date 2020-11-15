@@ -1,2 +1,2 @@
 # cyphus
-Rust library for scientific computing
+Rust library for scientific computing. Work in progress.
