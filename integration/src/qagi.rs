@@ -118,10 +118,9 @@ mod tests {
         let exp_result = 2.275875794468747770E+00;
         let exp_abserr = 7.436490118267390744E-09;
 
-        let alpha = 1.0;
         let f = |x: f64| (-x - x * x).exp();
 
-        let result = qagi(f, f64::NEG_INFINITY, f64::INFINITY, 1e-7, 0.0, 1000, 1);
+        let result = qagi(f, f64::NEG_INFINITY, f64::INFINITY, 1e-7, 0.0, 1000, 2);
 
         test_rel(result.val, exp_result, 1e-14);
         test_rel(result.err, exp_abserr, 1e-5);

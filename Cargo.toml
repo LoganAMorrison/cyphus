@@ -1,0 +1,49 @@
+[package]
+name = "cyphus"
+version = "0.1.0"
+authors = ["Logan A. Morrison <loanmorr@ucsc.edu>"]
+edition = "2018"
+license = "GPL-3.0"
+readme = "README.md"
+keywords = [
+   "mathematics", 
+   "numerics", 
+   "science", 
+   "special-functions", 
+   "scientific-computing"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+   "autodiff",
+   "diffeq",
+   "integration",
+   "interpolation",
+   "nlsolve",
+   "special",
+]
+
+[dependencies]
+lazy_static = "1.4.0"
+ndarray="0.13.1"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.num]
+num = "0.3.1"
+
+[dependencies.autodiff]
+path = "autodiff"
+[dependencies.diffeq] 
+path = "diffeq"
+[dependencies.integration] 
+path = "integration"
+[dependencies.interpolation] 
+path = "interpolation"
+[dependencies.nlsolve] 
+path = "nlsolve"
+[dependencies.special] 
+path = "special"

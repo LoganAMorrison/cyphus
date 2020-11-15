@@ -196,7 +196,7 @@ impl<T: Float> Float for Dual<T> {
     /// Raise a number to a floating point power.
     ///
     /// ```
-    /// use num_traits::Float;
+    /// use num::Float;
     ///
     /// let x = 2.0;
     /// let abs_difference = (x.powf(2.0) - x*x).abs();
